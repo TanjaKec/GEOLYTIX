@@ -3,7 +3,7 @@ date: "2016-04-09T16:50:16+02:00"
 title: Reproducibility
 output: 
   learnr::tutorial
-weight: 9
+weight: 13
 ---
 ### Reproducible Research?! What is it? 🤷️
 

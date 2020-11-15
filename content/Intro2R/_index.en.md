@@ -1,14 +1,14 @@
 ---
 chapter: true
 pre: <b>2. </b>
-title: Module 1
+title: Intro to R
 weight: 2
 ---
 
 
 #### Teaching and Learning Strategy
 
-##### The material is structured within XYZ small modules. Each module covers various related topics through appropriate case studies, presentations, readings. The conceptual ides come to life when practice becomes reality whic is why the material is devsigned as the hands on taught workshop, through the application of R. The workshop provides the opportunity to the participants to test their knowledge, both conceptual and practical by adopting interactive student/teacher approach. Students are expected to use their own time to practise and hone the data handling expertise acquired during the workshop. 
+##### The material is structured within thirteen small modules. Each module covers various related topics through appropriate case studies, presentations, readings. The conceptual ides come to life when practice becomes reality whic is why the material is devsigned as the hands on taught workshop, through the application of R. The workshop provides the opportunity to the participants to test their knowledge, both conceptual and practical by adopting interactive student/teacher approach. Students are expected to use their own time to practise and hone the data handling expertise acquired during the workshop. 
 
 ##### We recommend you complete tasks marked as **Your Turn** the end of the workshop
 
