@@ -4,7 +4,7 @@ title: General Overview
 weight: 1
 ---
 
-This workshop will provide an overview of key concepts for creating an effective data driven project and will introduce tools and techniques for data wrangling, visualisation and reproducible reporting using [**R**](https://www.r-project.org), a public domain language for data analysis. The **R** language provides a rich and flexible environment for working with data, especially data to be used for statistical modelling or graphics.
+This workshop will provide an overview of key concepts for creating an effective data driven project, and will introduce tools and techniques for data wrangling, visualisation and reproducible reporting using [**R**](https://www.r-project.org), a public domain language for data analysis. The **R** language provides a rich and flexible environment for working with data, especially data to be used for statistical modelling or graphics.
 
 The **R** system has an extensive library of packages that offer state-of-the-art-abilities. Many of the analyses that they offer are not even available in any of the standard packages. **R** enables you to escape from the restrictive environments and sterile analyses offered by commonly used statistical software packages. It enables easy experimentation and exploration, which improves data analysis. Sharing your discovery of data analysis knowledge is necessary in making it useful. **R** is a tool that enables reporting modern data analyses in a reproducible manner. It makes analysis more useful to others because the data and code that actually conducted the analysis can be made available and easily shared. As such R has become the lingua franca of quantitative research. Accordingly, this workshop will emphasize packages that will help you do data analysis, visualisation and communication with a wider audience.
 
@@ -14,7 +14,7 @@ Version control has become an essential tool for keeping track when working on D
 
 ## Objectives:
 
-* To be familiar with R/RStudio’s data handling facilities that will expand the range of Data Science problems that can be effectively analysed
+* To become familiar with R/RStudio’s data handling facilities that will expand the range of Data Science problems that can be effectively analysed
 * To provide a framework for developing analytical skills for handling a range of data sets
 * To introduce the basic principles behind effective data visualisation
 * To enable intelligent reproducible reporting of the results of data analysis to target audiences with diverse levels of numerate understanding
@@ -24,7 +24,7 @@ Version control has become an essential tool for keeping track when working on D
 
 If you would like to learn to explore, visualise, and analyse data in a reproducible and shareable manner then this workshop is for you! 😀
 
-This course is for people from varying backgrounds and diverse profiles. It is designed for people who recognise the paramount importance of data and its application trough the use of free opensource technologies such as R and GitHub.    
+This course is for people from varying backgrounds and diverse profiles. It is designed for people who recognise the paramount importance of data and its application through the use of free opensource technologies such as R and GitHub.    
 
 This course will benefit anyone who has the curiosity and desire to enter the realm of data science through the use of R. We will make sense of the world of data and learn effective and attractive ways to visually analyse and communicate related information using R. With the knowledge gained on this course, you will be ready to undertake your very own data analysis in a reproducible manner through the use of R. 
 

@@ -18,14 +18,14 @@ The RStudio window has multiple panes. [RStudio IDE Cheat Sheet](https://www.rst
 
 **Bottom Right -** <span style="color:blue">Help</span>: find out information about functions and packages. This same pane will have tabs for *showing plots* that you make, *view apps* and documents, show *files* in the folder, and *packages* used.
 
-R is a scripting language, which means that it is just like writing an essay, or a math proof. We write a script to do specific tasks, that we can run again and again, or give to someone else to run. 
+R is a scripting language, which means that it is just like writing an essay, or a maths proof. We write a script to do specific tasks, that we can run again and again, or give to someone else to run. 
 
 You should take note of the following facts:
 
-- R is case-sensitive language which executes instructions directly; 
+- R is a case-sensitive language which executes instructions directly 
 - Commands are entered at prompt `>`
 - Commands are separate statements which could be put in the same line if separated by a semi-colon `;`
-- Code statements can be commented by using a `#` tag. You can comment in continuation of the command line or in a separate line.
+- Code statements can be commented by using a `#` tag. You can comment in continuation of the command line or in a separate line
 
 {{% notice tip %}}
 💡 The best way to learn is by doing. Therefore, I would like you <span style="color:red">not to copy paste the commands shown in the black boxes</span>, but to <span style="color:red">type it in your R console</span>. It would be even better to type it as an R script, so that you can keep a history of it and return to it if you wish.
@@ -42,10 +42,10 @@ You should take note of the following facts:
 If you want to read or write files on your computer from and to a specific location you will need to set a working directory in R. To set the working directory in R to a specific folder on your computer you will use the following:
 
 ``` r
-# On a pc, you would set working directory like this
+# On a pc, you would set the working directory like this
 setwd("C:/Documents/MyR_Project")
 
-# On a mac, you would set working directory like this
+# On a mac, you would set the working directory like this
 setwd("~/documents/MyR_Project")
 ```
 
@@ -75,7 +75,7 @@ However, you should always start a fresh project (**File | New Project...**) tha
 
 R packages are collections of functions code, data sets, documentation and tests developed by the community, that are mostly made available on the <span style="color:red">C</span>omprehensive <span style="color:red">R</span> <span style="color:red">A</span>rchive <span style="color:red">N</span>etwork, or <span style="color:red">CRAN</span>, the public clearing house for R packages. These packages are developed by experts in their fields and currently the CRAN package repository features over 14,000 of them. Many of the analyses that they offer are not even available in any of the standard data analysis software packages, which is one of the reasons that R is so successful.  
 
-When you run R you will automatically upload the [`package:base`](https://www.rstudio.com/wp-content/uploads/2016/05/base-r.pdf), which is the system library, i.e. the package where all standard functions are defined. The rest of the so called *base packages* contain the basic statistical routines. Assuming that you are connected to the internet, you can install a package using `install.packages()`. From the RStudio menu you can do it by sellecting **Tools | Install Packages...** and typing the name of the desired package in the dialogue window.
+When you run R you will automatically upload the [`package:base`](https://www.rstudio.com/wp-content/uploads/2016/05/base-r.pdf), which is the system library, i.e. the package where all standard functions are defined. The rest of the so called *base packages* contain the basic statistical routines. Assuming that you are connected to the internet, you can install a package using `install.packages()`. From the RStudio menu, you can do it by selecting **Tools | Install Packages...** and typing the name of the desired package in the dialogue window.
 
 ![Red variant](/day1/UseR/images/InstallPckg.png?width=20pc)
 
@@ -107,7 +107,7 @@ R’s binary and logical operators will look very familiar to those who have som
 
 ![Red variant](/day1/UseR/images/LogicalOp.png?width=20pc)
 
-Try doing other math operations, like subtraction, multiplication, division, or square root and power operations. For example, try the following:
+Try doing other maths operations, like subtraction, multiplication, division, or square root and power operations. For example, try the following:
 
 ```
 2 + 5
@@ -137,7 +137,7 @@ To run multiple lines of code, highlight them and click **Run**.
 ![Red variant](/day1/UseR/images/RunScript.png?width=30pc)
 
 {{% notice tip %}}
-💡: Get into a habit of saving your scripts after you create them. Try to save them before running your code in case you write code that makes R crash which sometimes happens. 😣 &@#$!?#%
+💡: Get into the habit of saving your scripts after you create them. Try to save them before running your code in case you write code that makes R crash which sometimes happens. 😣 &@#$!?#%
 {{% /notice %}}
 
 <https://www.rstudio.com/products/rstudio/features/>
@@ -187,7 +187,7 @@ RStudio provides a very comfortable working environment and enables you to monit
 
 #### Built-In Functions
 
-R is not like other conventional statistical packages like SAS, Minitab, SPSS, to name a few. It is more of a programming language designed for conducting data analyses. It comes with a vast number of ready-made blocks of code that will enable you to manipulate data, perform intricate mathematical calculations with data, carry out an array of statistical analysis ranging from simple to complex to extremely complex and it will facilitate the creation of fantastic graphs. These pre-made blocks of code are known as <span style="color:red">**functions**</span>.
+R is not like other conventional statistical packages like SAS, Minitab, SPSS, to name a few. It is more of a programming language designed for conducting data analysis. It comes with a vast number of ready-made blocks of code that will enable you to manipulate data, perform intricate mathematical calculations with data, carry out an array of statistical analyses ranging from simple to complex to extremely complex and it will facilitate the creation of fantastic graphs. These pre-made blocks of code are known as <span style="color:red">**functions**</span>.
 
 R has all the standard mathematical functions that you might ever need: `sin`, `cos`, `tan`, `asin`, `atan`, `log`, `log10`, `exp`, `abs`, `sqrt`, `factorial`… To use them, all you need to do is to type the function and put the name of the object (argument) you would like to use the function for in brackets.
 
@@ -207,7 +207,7 @@ exp(x)
 log(y, 2)
 ```
 
-You can use expression as argument of a function:
+You can use expression as the argument of a function:
 
 ```
 z <- x * y
@@ -231,7 +231,7 @@ p
 
 When analysing data you are more likely to be working with lots of numbers/variables. It would be much more convenient to keep all of those numbers/variables as an object. Variables can be of different types: logical, integer, double, string are some examples. <span style="color:red">Variables with one or more values of the same type are **vectors**</span>. Hence, <span style="color:red">a variable with a single value</span> (known to us as a <span style="color:red">**scalar**</span>) is a vector of length 1. We can assign to vectors in many different ways:
 
-* generated by R using the colon symbol (`:`) as a sequence generated operator or by using built in function `rep()` for replicating the given number for a given number of times.
+* generated by R using the colon symbol (`:`) as a sequence generated operator or by using the built in function `rep()` for replicating the given number for a given number of times.
 
 
 ```r
@@ -280,7 +280,7 @@ seq(1,10,0.2)
 ```
 
 {{% notice note %}}
-💡: R can easily perform arithmetic with vectors as it does with scalars. Thus, just as we can use those operators over the scalars we can use them when dealing with the vectors and/or a combination of both.
+💡: R can easily perform arithmetic with vectors as it does with scalars. Thus, just as we can use these operators over scalars we can use them when dealing with vectors and/or a combination of both.
 {{% /notice %}}
 
 
@@ -387,7 +387,7 @@ x[4]
 ```
 
 {{% notice note %}}
-💡: In R you can evaluate functions over the entire vectors which helps to avoid looping.
+💡: In R you can evaluate functions over the entire vector which helps to avoid looping.
 {{% /notice %}}
 
 
@@ -576,7 +576,7 @@ Practise by doing the following set of exercises:
 `matrix(c(1, 5, 9, 2, 6, 10, 3, 7, 11, 4, 8, 12), nrow = 4, 
 ncol = 3, byrow = TRUE)`
 
-7) Use a subscript to find the `2`-nd number in vector `x1` and `x2` and element in the `2`-nd row and `3`-rd column in matrix `m1`.
+7) Use a subscript to find the `2`-nd number in vector `x1` and `x2` and the element in the `2`-nd row and `3`-rd column in matrix `m1`.
 
 8) Add the `5`-th number in vector `x1` to the element in matrix `m1` which is in `1`-st row and `1`-st column.
 

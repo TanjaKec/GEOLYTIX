@@ -8,18 +8,17 @@ weight: 2
 
 #### Teaching and Learning Strategy
 
-##### The material is structured within thirteen small modules. Each module covers various related topics through appropriate case studies, presentations, readings. The conceptual ides come to life when practice becomes reality whic is why the material is devsigned as the hands on taught workshop, through the application of R. The workshop provides the opportunity to the participants to test their knowledge, both conceptual and practical by adopting interactive student/teacher approach. Students are expected to use their own time to practise and hone the data handling expertise acquired during the workshop. 
+##### The material is structured within thirteen small modules. Each module covers various related topics through appropriate case studies, presentations and readings. The conceptual ideas come to life when practice becomes reality which is why the material is designed as a hands on taught workshop, through the application of R. The workshop provides the opportunity for participants to test their knowledge, both conceptual and practical by adopting an interactive student/teacher approach. Students are expected to use their own time to practise and hone the data handling expertise acquired during the workshop. 
 
-##### We recommend you complete tasks marked as **Your Turn** the end of the workshop
-
+##### We recommend you complete tasks marked as **Your Turn** the end of each section.
 
 ##### RStudio IDE; R language; Introduction to Visualization Principles; Data Wrangling and Visualising Data; R Markdown
 
 **What you will learn:**
 
-* basic use of R/RStudio console
-* good habits for workflow
-* inputting and importing different data types
+* Basic use of R/RStudio console
+* Good habits for workflow
+* Inputting and importing different data types
 * R environment: record keeping
 * Data classification
 * Descriptive summary statistics

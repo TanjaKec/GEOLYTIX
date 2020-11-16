@@ -8,9 +8,9 @@ The instructor is **Dr Tatjana Kecojević** who is a longtime **R** user with a 
 
 ![Tatjana Kecojevic](/images/TK.jpg?width=40pc)
 
->##### During my lecturing career I was incredibly fortunate to work with some truly amazing colleagues who have helped me explore and develop my own teaching philosophy and practice. I gained valuable experience in developing, designing and teaching data analysis modules at varying levels of undergraduate and graduate courses. In particular I mastered my teaching skills by lecturing with George Rawlings and Ian McGowan on decision modelling modules. They taught me how to teach basic statistical concepts, which theoretically may be perceived as complex, in an effective way by emphasising concepts over formulas, engaging students to reason rather than to memorise. 
+>##### During my lecturing career I was incredibly fortunate to work with some truly amazing colleagues who helped me explore and develop my own teaching philosophy and practice. I gained valuable experience in developing, designing and teaching data analysis modules at varying levels of undergraduate and graduate courses. In particular I mastered my teaching skills by lecturing with George Rawlings and Ian McGowan on decision modelling modules. They taught me how to teach basic statistical concepts, which theoretically may be perceived as complex, in an effective way by emphasising concepts over formulae, engaging students to reason rather than to memorise. 
 >
->##### The material presented is built on those principles and been enriched by integrating the vast amount of open and inclusive #rstats community resources. This learning resource is free to use. It is written in [`Rmarkdown`](https://cran.r-project.org/web/packages/rmarkdown/index.html) using [`blogdown`](https://cran.r-project.org/web/packages/blogdown/index.html) package. 
+>##### The material presented is built on those principles and has been enriched by integrating the vast amount of open and inclusive #rstats community resources. This learning resource is free to use. It is written in [`Rmarkdown`](https://cran.r-project.org/web/packages/rmarkdown/index.html) using [`blogdown`](https://cran.r-project.org/web/packages/blogdown/index.html) package. 
 
 -----------------------------
 © 2020 Tatjana Kecojevic

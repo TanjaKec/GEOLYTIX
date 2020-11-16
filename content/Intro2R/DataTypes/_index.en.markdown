@@ -99,7 +99,7 @@ is.factor(x)
 
 ### Data Frames
 
-Statistical data usually consists of several vectors of equal length and of various types that resemble a table. Those vectors are interconnected across so that data in the same position comes from the same experimental unit, ie. observation. R uses data frame for storing this kind of data table and it is regarded as primary data structure.
+Statistical data usually consists of several vectors of equal length and of various types that resemble a table. These vectors are interconnected across so that data in the same position comes from the same experimental unit, ie. observation. R uses data frame for storing this kind of data table and it is regarded as a primary data structure.
 
 Let us consider a study of share prices of companies from three different business sectors. As part of the study a random sample (n=15) of companies was selected and the following data was collected:
 
@@ -134,7 +134,7 @@ sector
 ## Levels: 1 2 3
 ```
 
-Rather than keeping this data as a set of individual vectors in R, it would be better to keep whole data as a single object, i.e. data frame.
+Rather than keeping this data as a set of individual vectors in R, it would be better to keep all the data as a single object, i.e. data frame.
 
 ```
 share.data <- data.frame(share_price, profit, sector)

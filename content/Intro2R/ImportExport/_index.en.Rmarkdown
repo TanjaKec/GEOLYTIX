@@ -6,7 +6,7 @@ output:
 weight: 8
 ---
 
-It’s the first big hurdle to dealing with data in R. 
+It is the first big hurdle when dealing with data in R. 
 
 You are most likely to have looked at, organised and examined your data files in Excel.
 
@@ -27,7 +27,7 @@ In this section we will show you how to access the most commonly used data types
 
 ### the R base
 
-The simplest data form is a [text file](https://en.wikipedia.org/wiki/Text_file). Text files can be read by any computer operating system and by almost all different kind of statistical programs. Saving data as a text file makes your data highly accessible. If you have a text data file you wish to use, you can easily import it with **the R base** functions `read.table()`
+The simplest data form is a [text file](https://en.wikipedia.org/wiki/Text_file). Text files can be read by any computer operating system and by almost all different kinds of statistical programs. Saving data as a text file makes your data highly accessible. If you have a text data file you wish to use, you can easily import it with **the R base** functions `read.table()`
 
 This reads a file in table format and creates a data frame from it
 
@@ -45,13 +45,13 @@ Comma separated files are the most common way to save spreadsheets that don’t 
 
 Let us go to <https://data.gov.uk/> UK open data portal. In particular, let us try to access [Leeds libraries](https://data.gov.uk/dataset/4853a980-0c6d-4d83-9daa-d0441b21f6e1/leeds-libraries) and import this data to R.
 
-We are not going to download it onto our local computers, but rather we will import it to R directly from the web using the link provided.
+Instead of downloading it onto our local computers, we will import it to R directly from the web using the link provided.
 
 ```{r}
 df_csv <- read.csv("https://datamillnorth.org/download/leeds-libraries/cfc9f345-4916-4b74-aa9e-cecc78db9075/library%2520locations.csv", stringsAsFactors = FALSE, fileEncoding = "latin1")
 head(df_csv, 10)
 ```
-The other way is to download it and to save it to your working directory.
+The other way is to download it and save it to your working directory.
 
 Let us download [Leeds libraries csv file](https://datamillnorth.org/download/leeds-libraries/cfc9f345-4916-4b74-aa9e-cecc78db9075/library%2520locations.csv)
 Make sure you save the file into your R-Project working directory before you ask R to execute the following
@@ -61,7 +61,7 @@ df_csv <- read.csv("library locations.csv", stringsAsFactors = FALSE, fileEncodi
 ```
 
 {{% notice info %}}
-Run the above code again, but set `stringsAsFactors` argument from the `read.csv` function to `TRUE`. Can you tell the difference between now and before? Why do you think we it is useful to use `fileEncoding` argument?
+Run the above code again, but set `stringsAsFactors` argument from the `read.csv` function to `TRUE`. Can you tell the difference between now and before? Why do you think it is useful to use `fileEncoding` argument?
 {{% /notice %}}
 
 What do you think about this dataset? 🤔
@@ -92,7 +92,7 @@ Importing Excel data files is not straightforward as it might contain multiple s
 To access the data from an Excel sheet you can’t just copy and paste the URL for the file. You have to download the file first.
 {{% /notice %}}
 
-Let us download an Excel data file from [data.gov.uk](https://data.gov.rs/) about [Greater London Authority Poll Results 2018](https://data.gov.uk/dataset/f1331be1-cef6-4abd-8c08-c463716f83bd/gla-poll-results-2018) form this link:[December 2018 - YouGov GLA poll results](https://data.london.gov.uk/download/gla-poll-results-2018/4fa46414-100c-4727-907f-dc4a185f018c/Dec%25202018%2520-%2520YouGov%2520GLA%2520poll%2520results.xls). 
+Let us download an Excel data file from [data.gov.uk](https://data.gov.rs/) about [Greater London Authority Poll Results 2018](https://data.gov.uk/dataset/f1331be1-cef6-4abd-8c08-c463716f83bd/gla-poll-results-2018) from this link:[December 2018 - YouGov GLA poll results](https://data.london.gov.uk/download/gla-poll-results-2018/4fa46414-100c-4727-907f-dc4a185f018c/Dec%25202018%2520-%2520YouGov%2520GLA%2520poll%2520results.xls). 
 
 If you are unable to open the file in Excel to examine how many sheets the file has, try to read the file in R accessing the first one by specifying it in the `read_excel()` function as required. As previously, make sure you save the file into your R-Project working directory before you ask R to execute the following:
 
@@ -123,7 +123,7 @@ my_url <-"https://coronavirus.data.gov.uk/downloads/msoa_data/MSOAs_latest.json"
 covid_uk <- fromJSON(my_url)
 ```
 
-Check the structure of the `polen`! 😰
+Check the structure of the `covid_uk`! 😰
 
 ```{r}
 str(covid_uk)
@@ -132,7 +132,7 @@ names(covid_uk$data)
 
 Note that the `covid_uk$data` is a data frame with a list `newCasesByPublishDate` inside as its element.
 
-Ouch! 😳 JSON files are not very neat 😱 They are more than often nested, chained -> you’ve got it: Very Messy! 😫 So, we will leave it there. 😬 If you do need to learn more about reading JSON files in R you can explore the functionality of the `jsonlite` package further by reading [Getting started with JSON and jsonlite](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html). Blog post [Working with JSON data in very simple way](https://blog.exploratory.io/working-with-json-data-in-very-simple-way-ad7ebcc0bb89) by [Kan Nishida](https://blog.exploratory.io/@kanaugust) provides a great example of how this data format can be used in R. 
+Ouch! 😳 JSON files are not very neat 😱 They are more than often nested, chained -> you’ve got it: Very Messy! 😫 So, we will leave it there. 😬 If you do need to learn more about reading JSON files in R you can explore the functionality of the `jsonlite` package further by reading [Getting started with JSON and jsonlite](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html). The blog post [Working with JSON data in very simple way](https://blog.exploratory.io/working-with-json-data-in-very-simple-way-ad7ebcc0bb89) by [Kan Nishida](https://blog.exploratory.io/@kanaugust) provides a great example of how this data format can be used in R. 
 
 ### Other data formats
 
