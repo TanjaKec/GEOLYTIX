@@ -2,14 +2,14 @@ baseURL = "https://introtor.netlify.app/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Data Literacy in R"
+title = "Introduction to R"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
   editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
-  description = "Data Literacy in R"
+  description = "Introduction to R"
   author = "Tatjana Kecojevic"
   showVisitedLinks = true
   disableBreadcrumb = false
@@ -24,7 +24,7 @@ home = ["HTML"]
 
 [Languages]
 [Languages.en]
-title = "Data Literacy in R"
+title = "Introduction to R"
 weight = 1
 languageName = "English"
 
