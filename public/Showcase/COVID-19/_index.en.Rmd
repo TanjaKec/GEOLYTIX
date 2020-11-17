@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE,
 
 Open data belongs to everyone; it empowers people to make informed decisions that are not clouded by misinformation, rumour and gossip. To be able to identify the underlying facts within data sets, it is crucial that individuals and communities possess the necessary skills. Open data is often inconsistent and limited and requires a significant amount of time to organise and structure for presentation purposes.
 
-This is a data analysis report concerning the visualisation of the COVID-19 virus within the United Kingdom and Europe. All of the report is created with [R](https://www.r-project.org). It represents a case study as an illustration of the concepts presented at the workshop on basic R for data analysts. To learn how to use R and develop a report like this visit the [Website with the workshop material](https://www.geolytix.co.uk).
+This is a data analysis report concerning the visualisation of the COVID-19 virus within the United Kingdom and Europe. All of the report is created with [R](https://www.r-project.org). It represents a case study as an illustration of the concepts presented at the workshop on basic R for data analysts. To learn how to use R and develop a report like this visit the [Introduction To R](https://introtor.netlify.app/) website.
 
 <p><font color="black" face="Verdana, Geneva, sans-serif" size="+1.5">**Covid-19: Open Data**</font></p>
 
