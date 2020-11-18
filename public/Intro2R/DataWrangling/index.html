@@ -12,18 +12,18 @@
     <title>Data Wrangling :: Introduction to R</title>
 
     
-    <link href="/css/nucleus.css?1605608115" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1605608115" rel="stylesheet">
-    <link href="/css/hybrid.css?1605608115" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1605608115" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1605608115" rel="stylesheet">
-    <link href="/css/auto-complete.css?1605608115" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1605608115" rel="stylesheet">
-    <link href="/css/theme.css?1605608115" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1605608115" rel="stylesheet">
+    <link href="/css/nucleus.css?1605698446" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1605698446" rel="stylesheet">
+    <link href="/css/hybrid.css?1605698446" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1605698446" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1605698446" rel="stylesheet">
+    <link href="/css/auto-complete.css?1605698446" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1605698446" rel="stylesheet">
+    <link href="/css/theme.css?1605698446" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1605698446" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1605608115"></script>
+    <script src="/js/jquery-3.3.1.min.js?1605698446"></script>
 
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"> </script>
 
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1605608115"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1605608115"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1605698446"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1605698446"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1605608115"></script>
+<script type="text/javascript" src="/js/search.js?1605698446"></script>
 
     
   </div>
@@ -790,7 +790,7 @@
 
 <p><strong>How do we do it?</strong> 🤔</p>
 <p><img src="/day2/DataWrangling/images/Program_HW.png?width=40pc" /></p>
-<p>This diagram is taken from the <a href="https://r4ds.had.co.nz/">R for Data Science</a> book by <a href="https://twitter.com/statgarrett">Garrett Grolemund</a> and <a href="https://twitter.com/hadleywickham">Hadley Wickham</a>, which it is a great resource for learning R. There is a whole community built around it and you could join it and start learning together: <a href="https://www.rfordatasci.com/">R4DS online learning community</a>.</p>
+<p>This diagram is taken from the <a href="https://r4ds.had.co.nz/">R for Data Science</a> book by <a href="https://twitter.com/statgarrett">Garrett Grolemund</a> and <a href="https://twitter.com/hadleywickham">Hadley Wickham</a>, which is a great resource for learning R. There is a whole community built around it and you could join it and start learning together: <a href="https://www.rfordatasci.com/">R4DS online learning community</a>.</p>
 <p><strong>Dataset</strong></p>
 <p>To learn and practise how to organise data we will use a <code>gapminder</code> data set available from the <code>gapminder</code> package in R. This dataset is put into R by <a href="https://jennybryan.org/">Jennifer Bryan</a> from a tank of data sets available from <a href="https://www.gapminder.org">Gapminder</a>.</p>
 <p><a href="https://www.gapminder.org">Gapminder</a> is an independent Swedish foundation that helps to promote sustainable global development by collecting and analysing relevant data and by developing and designing teaching/learning tools. <a href="https://en.wikipedia.org/wiki/Gapminder_Foundation">Gapminder</a> was founded in Sweden by <a href="https://en.wikipedia.org/wiki/Hans_Rosling">Hans Rosling</a> who was a mastermind for distinctive and insightful storytelling about global development using visual animation.</p>
@@ -832,7 +832,7 @@ head(gapminder::gapminder)</code></pre>
 ## 1 Afghanistan Asia       1952    28.8  8425333      779.
 ## 2 Afghanistan Asia       1957    30.3  9240934      821.
 ## 3 Afghanistan Asia       1962    32.0 10267083      853.</code></pre>
-<p>1st look at the data using the following functions: <span style="color:red"><code>dim()</code></span> &amp; <span style="color:dim"><code>head()</code></span></p>
+<p>First look at the data using the following functions: <span style="color:red"><code>dim()</code></span> &amp; <span style="color:dim"><code>head()</code></span></p>
 <pre class="r"><code>library(gapminder)
 dim(gapminder)</code></pre>
 <pre><code>## [1] 1704    6</code></pre>
@@ -1202,7 +1202,7 @@ plot(gapminder_pipe$pop_e6, gapminder_pipe$lifeExp, cex = 0.5, col = &quot;red&q
 <p><img src="/Intro2R/DataWrangling/_index.en_files/figure-html/unnamed-chunk-24-1.png" width="576" style="display: block; margin: auto;" /></p>
 <hr />
 <p><strong><code>tidyr</code></strong></p>
-<p>The <code>tidyr</code> can help you to create <strong>tidy data</strong>. Tidy data is data where:</p>
+<p><code>tidyr</code> can help you to create <strong>tidy data</strong>. Tidy data is data where:</p>
 <ul>
 <li>Every <strong>column</strong> is a <strong>variable</strong></li>
 <li>Every <strong>row</strong> is an <strong>observation</strong></li>
@@ -1213,10 +1213,10 @@ plot(gapminder_pipe$pop_e6, gapminder_pipe$lifeExp, cex = 0.5, col = &quot;red&q
 <p><a href="http://hadley.nz/">Hadley Wickham</a> the author of the <code>tidyr</code> package talks in his paper <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a> about the importance of the data cleaning process and structuring datasets to facilitate data analysis.</p>
 <p>Real datasets, that you are most likely to download from <a href="https://data.gov.rs/" class="uri">https://data.gov.rs/</a> or any other open source data platform, would often violate the three precepts of tidy data in all kinds of different ways:</p>
 <ul>
-<li>Variables would not have their names and column headers are values.</li>
+<li>Variables would not have their names and column headers are values</li>
 <li>A number of variables are stored in one column</li>
 <li>A single variable is stored in several columns</li>
-<li>Same information stored multiple times as different variables</li>
+<li>The same information stored multiple times as different variables</li>
 </ul>
 <p>to name a few.</p>
 <p>To illustrate this, let us go back onto <a href="https://data.gov.rs/" class="uri">https://data.gov.rs/</a> and access <a href="https://data.gov.rs/sr/datasets/kvalitet-vazduha-2017/">Kvalitet Vazduha 2017</a>. In particular, we want to access <a href="http://data.sepa.gov.rs/dataset/ca463c44-fbfa-4de9-9a75-790995bf2830/resource/74516688-5fb5-47b2-becc-6b6e31a24d80/download/2017-no2.csv">2017-NO2.csv</a> data.</p>
@@ -1246,11 +1246,11 @@ glimpse(no2)</code></pre>
 <li><code>NO2</code> measurements: given in several columns -&gt; ❎ tidy🙁</li>
 </ul>
 <p>Hmmm… 🤔 This doesn’t look tidy at all 😳</p>
-<p>This data is about measurement level of NO2(µg/m3) in several different towns/places, which means that NO2 is our main response variable. The way in which this variable is given in this data is certainly not tidy. It defeats the key principles of tidy data: <strong>Every column is a variable</strong> and furthermore, <strong>Every row is <span style="color:orangered">NOT</span> an observation</strong>.</p>
+<p>This data is about the measurement level of NO2(µg/m3) in several different towns/places, which means that NO2 is our main response variable. The way in which this variable is given in this data is certainly not tidy. It defeats the key principles of tidy data: <strong>Every column is a variable</strong> and furthermore, <strong>Every row is <span style="color:orangered">NOT</span> an observation</strong>.</p>
 <p>It appears that this data has <code>8</code> variables, but we have realised that there are only <code>3</code>: <code>date</code>, <code>place</code> and <code>no2</code>. To tidy it, we need to <strong>stack it</strong> by turning columns into rows. We are happy with the variable <code>date</code> and it should remain as a single column, the other <code>7</code> columns we want to convert into two variables: <code>place</code> and <code>no2</code>.</p>
-<p>To make <em>wide format</em> data into <em>tall format</em> we have to turn columns into rows using <code>gather()</code> function.</p>
+<p>To make <em>wide format</em> data into <em>tall format</em> we have to turn columns into rows using the <code>gather()</code> function.</p>
 <p><img src="images/gather.png" width="450px" /></p>
-<p>We will create variable <code>place</code> in which we will hold the headers as given in the columns 2:8. The values inside those columns will be saved in the new variable <code>no2</code>.</p>
+<p>We will create a variable <code>place</code> in which we will hold the headers as given in columns 2:8. The values inside these columns will be saved in the new variable <code>no2</code>.</p>
 <pre class="r"><code>new_no2 &lt;- no2 %&gt;%
   gather(&quot;place&quot;, &quot;no2&quot;, -Datum, factor_key = TRUE) # stack all columns apart from `Datum`
 glimpse(new_no2)</code></pre>
@@ -1274,7 +1274,7 @@ glimpse(new_no2)</code></pre>
 ## 5 Kragujevac..NO2           365
 ## 6 U.ice..NO2                365
 ## 7 Ni..IZJZ.Ni...NO2         365</code></pre>
-<p>Those names look very messy. We could use function from <a href="https://stringr.tidyverse.org"><code>stringr</code></a> package <code>str_sub()</code>. To begin with let’s remove <span style="color:orangered">.NO2</span> at the end of each name.</p>
+<p>These names look very messy. We could use the function from <a href="https://stringr.tidyverse.org"><code>stringr</code></a> package <code>str_sub()</code>. To begin with let’s remove <span style="color:orangered">.NO2</span> at the end of each name.</p>
 <pre class="r"><code>## If you don&#39;t have stringr installed yet, uncomment and run the line below
 #install.packages(&quot;stringr&quot;)
 library(stringr)
@@ -1301,7 +1301,7 @@ glimpse(new_no2)</code></pre>
 ## 6 Novi.Sad.SPENS        365
 ## 7 U.ice.                365</code></pre>
 <p>It still doesn’t look right. 😟 This could be a tedious job. 😥 It is no wonder that many data analysts grumble about time spent on the process of cleaning and preparing the data. It could be a very long and time consuming process, but the more you do it and the more experience you gain the easier and less painful it gets.</p>
-<p>Perhaps, you can try to explore other available packages in R that could help you with organising your data into your ideal format. To give you an idea we will show you how it can easily be done when using <code>forcats::fct_recode()</code> function.</p>
+<p>Perhaps, you can try to explore other available packages in R that could help you with organising your data into your ideal format. To give you an idea we will show you how it can easily be done when using the <code>forcats::fct_recode()</code> function.</p>
 <pre class="r"><code>## If you don&#39;t have forcats installed yet, uncomment and run the line below
 #install.packages(&quot;forcats&quot;)
 library(forcats)
@@ -1322,10 +1322,10 @@ glimpse(new_no2)</code></pre>
 ## $ place &lt;fct&gt; NS_Spens, NS_Spens, NS_Spens, NS_Spens, NS_Spens, NS_Spens, NS_…
 ## $ no2   &lt;dbl&gt; 22.89, 32.94, 14.86, 22.73, 20.89, 10.47, 9.58, 15.99, 14.46, 9…</code></pre>
 
-<div class="notices note" ><p>By now, you should have gained enough knowledge in using R to give you the necessary confidence to start exploring other functions of the <!-- raw HTML omitted --><!-- raw HTML omitted -->tidyr<!-- raw HTML omitted --><!-- raw HTML omitted --> package. You should not stop there, but go beyond and explore the whole of the <!-- raw HTML omitted --><!-- raw HTML omitted -->tidyverse<!-- raw HTML omitted --><!-- raw HTML omitted --> opinionated collection of R packages for data science. 😇🎶</p>
+<div class="notices note" ><p>By now, you should have gained enough knowledge about using R to give you the necessary confidence to start exploring other functions of the <!-- raw HTML omitted --><!-- raw HTML omitted -->tidyr<!-- raw HTML omitted --><!-- raw HTML omitted --> package. You should not stop there, but go beyond and explore the whole of the <!-- raw HTML omitted --><!-- raw HTML omitted -->tidyverse<!-- raw HTML omitted --><!-- raw HTML omitted --> opinionated collection of R packages for data science. 😇🎶</p>
 </div>
 
-<p>To learn more about <strong>tidy data in r</strong> check <a href="https://garrettgman.ithuthe%20b.io/tidying/">Data Tidying</a> section from the famous <a href="https://garrettgman.github.io">Data Science with R</a> by <a href="https://resources.rstudio.com/authors/garrett-grolemund">Garrett Grolemund</a></p>
+<p>To learn more about <strong>tidy data in r</strong> check the <a href="https://garrettgman.ithuthe%20b.io/tidying/">Data Tidying</a> section from the famous <a href="https://garrettgman.github.io">Data Science with R</a> by <a href="https://resources.rstudio.com/authors/garrett-grolemund">Garrett Grolemund</a></p>
 
 <div class="notices tip" ><p>Have you tried learning data science by posting your questions and discussing it with other people within the R community? 👥💻📊📈🗣 <!-- raw HTML omitted -->RStudio Community<!-- raw HTML omitted --></p>
 </div>
@@ -1342,7 +1342,7 @@ glimpse(new_no2)</code></pre>
 <li><p>produce a <em>summary</em> using <code>base::summary()</code> function of these numeric values.</p></li>
 <li><p>within this selection filter only those observations where <code>Rainfall &gt;= 1</code> and save the results into the computer’s memory (ie. save the results as an object).</p></li>
 <li><p>Try to think of how else you can use other <code>dplyr</code> verbs on this <code>weatherAUS</code> dataset. Write your question first, before embarking on typing the code.</p></li>
-<li><p>Write a short report on what visualisation you think would be interesting to produce for this <code>weatherAUS</code> dataset and why?</p></li>
+<li><p>Write a short report in what visualisation you think it would be interesting to produce for this <code>weatherAUS</code> dataset and why?</p></li>
 </ol>
 <hr />
 <p><strong>Useful Links</strong></p>
@@ -1760,19 +1760,19 @@ glimpse(new_no2)</code></pre>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1605608115"></script>
-    <script src="/js/perfect-scrollbar.min.js?1605608115"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1605608115"></script>
-    <script src="/js/jquery.sticky.js?1605608115"></script>
-    <script src="/js/featherlight.min.js?1605608115"></script>
-    <script src="/js/highlight.pack.js?1605608115"></script>
+    <script src="/js/clipboard.min.js?1605698446"></script>
+    <script src="/js/perfect-scrollbar.min.js?1605698446"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1605698446"></script>
+    <script src="/js/jquery.sticky.js?1605698446"></script>
+    <script src="/js/featherlight.min.js?1605698446"></script>
+    <script src="/js/highlight.pack.js?1605698446"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1605608115"></script>
-    <script src="/js/learn.js?1605608115"></script>
-    <script src="/js/hugo-learn.js?1605608115"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1605698446"></script>
+    <script src="/js/learn.js?1605698446"></script>
+    <script src="/js/hugo-learn.js?1605698446"></script>
 
-    <link href="/mermaid/mermaid.css?1605608115" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1605608115"></script>
+    <link href="/mermaid/mermaid.css?1605698446" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1605698446"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

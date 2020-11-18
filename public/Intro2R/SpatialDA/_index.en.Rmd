@@ -17,20 +17,20 @@ There are **two types of CRS**:
 
 1) Geographical
 
-  * specific locations on the surface are defined by a three dimensional model of the Earth. 
+  * specific locations on the surface are defined by a three dimensional model of the Earth 
   * longitude and latitude
 
 2) Projected
 
-  *	A conversion of the three-dimensional grid onto a two-dimensional plane.
+  *	A conversion of the three-dimensional grid onto a two-dimensional plane
 
 According to the storing technique, spatial data is one of two types:
 
-1)	**Raster data**: composed of grid cells identified by row and column. The whole geographic area is divided into groups of individual cells, which represent an image (satellite images)
+1)	**Raster data**: composed of grid cells identified by row and column. The whole geographic area is divided into groups of individual cells, which represent an image (satellite images).
 
-2)	**Vector data** are composed of points, polylines, and polygons. For example hospitals, houses etc. are represented by points, while rivers, roads, etc., are represented by polylines. Villages and towns are represented by polygons.
+2)	**Vector data**: composed of points, polylines, and polygons. For example hospitals, houses etc. are represented by points, while rivers, roads, etc., are represented by polylines. Villages and towns are represented by polygons.
 
-When doing spatial analysis you will also deal with attribute data, which contain the relevant information about the spatial data. The analysis will be based on attribute data attached to geospatial data. Such data could be:
+When doing spatial analysis you will also deal with attribute data, which contains the relevant information about the spatial data. The analysis will be based on attribute data attached to geospatial data. Such data could be:
 
 * nominal
 * ordinal
@@ -41,7 +41,7 @@ ie. attribute or measured type of data.
 
 **Static Maps: Shape File** 
 
-R has impressive geographic capabilities and can handle different kinds of spatial data file formats including geojson and KML. We will illustrate the use of the ESRI Shapefile format, which stores nontopological geometry and attribute information for the spatial features in a data set. A shapefile consists minimally of a main file, an index file, and a dBASE table.
+R has impressive geographic capabilities and can handle different kinds of spatial data file formats including geojson and KML. We will illustrate the use of the ESRI Shapefile format, which stores non-topological geometry and attribute information for the spatial features in a data set. A shapefile consists minimally of a main file, an index file, and a dBASE table.
 
 -	.shp - lists shape and vertices
 -	.shx - has index with offsets
@@ -140,9 +140,7 @@ libs <- mydata %>%
 libs
 ```
 
-
-
-Here is an interesting website which introduces all kind of possibilities when creating maps with ['leaflet'](https://maptimeboston.github.io/leaflet-intro/). You should check it out and explore further for yourself.
+Here is an interesting website which introduces all kinds of possibilities when creating maps with ['leaflet'](https://maptimeboston.github.io/leaflet-intro/). You should check it out and explore further for yourself.
 
 {{% notice note %}}
 From its original application as a statistical programming language, R has come a long way and has become very powerful in supporting spatial analysis. All R packages include vignettes with explanations of the functions’ syntaxes and often very helpful mini-tutorials that illustrate the practical uses of the functions around related problems. [CRAN Task View for Analysis of Spatial Data ](https://cran.r-project.org/web/views/Spatial.html) provides a list of available libraries in R for geographical mapping that are commonly used when undertaking spatial analysis and mapping projects in R. 

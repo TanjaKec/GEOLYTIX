@@ -8,8 +8,8 @@ weight: 11
 
 
 
-<p>Most of you, if not all, will be familiar with creating graphs in Excel. Software such as Excel has a predefined set of menu options for plotting the data that is the focus of the end result: “pretty graph”. Those types of menus assume data to be in a format ready for plotting, which when you get raw data is hardly the case. You are probably going to have to organise and wrangle your data to make it ready for effective visualisation.</p>
-<p><strong>Grammar of Graphics</strong></p>
+<p>Most of you, if not all, will be familiar with creating graphs in Excel. Software such as Excel has a predefined set of menu options for plotting the data that is the focus of the end result: “pretty graph”. These types of menus assume data to be in a format ready for plotting, which when you get raw data is hardly the case. You are probably going to have to organise and wrangle your data to make it ready for effective visualisation.</p>
+<p><strong>The Grammar of Graphics</strong></p>
 <p>The <a href="http://vita.had.co.nz/papers/layered-grammar.html">grammar of graphics</a> enables a structured way of creating a plot by adding the components as layers, making it look effective and attractive.</p>
 <p>It enables you to specify building blocks of a plot and to combine them to create the graphical display that you want. There are 8 building blocks:</p>
 <ul>
@@ -32,11 +32,11 @@ Unlike base graphics, ggplot works with dataframes and not individual vectors.
 <p>The best way to master it is by practising. So let us create a first <code>ggplot</code>. 😃
 What we need to do is the following:</p>
 <ol style="list-style-type: lower-roman">
-<li>Wrangle the data in the format suitable for visualisation.</li>
+<li>Wrangle the data in a format suitable for visualisation</li>
 <li>“Initialise” a plot with <code>ggplot()</code>:</li>
 </ol>
 <p><strong>ggplot(<span style="color:blue">dataframe</span>, aes(<span style="color:orangered">x = explanatory variable</span>, <span style="color:green">y = response variable</span>))</strong></p>
-<p>This will draw a blank ggplot, even though the x and y are specified. <code>ggplot</code> doesn’t assume the plot you meant to be drawn (a scatterplot). You only specify the data set and columns ie. variables to be used. Also note that <code>aes( )</code> function is used to specify the x and y axes.</p>
+<p>This will draw a blank ggplot, even though the x and y are specified. <code>ggplot</code> doesn’t assume the plot you meant to be drawn (a scatterplot). You only specify the data set and columns ie. variables to be used. Also note that the <code>aes( )</code> function is used to specify the x and y axes.</p>
 <ul>
 <li><ol start="3" style="list-style-type: lower-roman">
 <li>Add layers with <code>geom_</code> functions:</li>
@@ -113,23 +113,23 @@ summary(m1)</code></pre>
 <li><p>Produce a scatterplot: what does it tell you?</p></li>
 <li><p>Fit a regression model: is there a relationship? How strong is it?
 Is the relationship linear? What conclusion(s) can you draw?</p></li>
-<li><p>What are the other questions you could ask; could you provide the answers to them?</p></li>
+<li><p>What are the other questions you could ask and could you provide the answers to them?</p></li>
 </ol>
 <p>😃🙌 Solution: code Q1; sample</p>
 <pre class="r"><code>sample_n(gapminder, 30)</code></pre>
 <pre><code>## # A tibble: 30 x 6
-##    country           continent  year lifeExp      pop gdpPercap
-##    &lt;fct&gt;             &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
-##  1 Korea, Dem. Rep.  Asia       1967    59.9 12617009     2144.
-##  2 Iceland           Europe     1952    72.5   147962     7268.
-##  3 Portugal          Europe     2007    78.1 10642836    20510.
-##  4 Saudi Arabia      Asia       1952    39.9  4005677     6460.
-##  5 Singapore         Asia       1967    67.9  1977600     4977.
-##  6 Bulgaria          Europe     1952    59.6  7274900     2444.
-##  7 Czech Republic    Europe     1957    69.0  9513758     8256.
-##  8 Slovenia          Europe     1987    72.2  1945870    18679.
-##  9 Germany           Europe     2002    78.7 82350671    30036.
-## 10 Equatorial Guinea Africa     1992    47.5   387838     1132.
+##    country            continent  year lifeExp        pop gdpPercap
+##    &lt;fct&gt;              &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;      &lt;int&gt;     &lt;dbl&gt;
+##  1 Dominican Republic Americas   2002    70.8    8650322     4564.
+##  2 Niger              Africa     1982    42.6    6437188      910.
+##  3 Germany            Europe     1952    67.5   69145952     7144.
+##  4 Bulgaria           Europe     1997    70.3    8066057     5970.
+##  5 Venezuela          Americas   1952    55.1    5439568     7690.
+##  6 Greece             Europe     1972    72.3    8888628    12725.
+##  7 Guatemala          Americas   1977    56.0    5703430     4880.
+##  8 Puerto Rico        Americas   1952    64.3    2227000     3082.
+##  9 China              Asia       2007    73.0 1318683096     4959.
+## 10 Switzerland        Europe     1997    79.4    7193761    32135.
 ## # … with 20 more rows</code></pre>
 <p>We will add layers onto this scatterplot: <code>liveExp</code> vs <code>gdpPercap</code>. We want to superimpose regression line of the best fit and non-parametric loess line that depict a possible relationship between the two variables. That means we will have:</p>
 <ul>
@@ -244,13 +244,13 @@ Note that the legend is added automatically. You can remove it by setting the <s
 <p><img src="/Intro2R/Visualisation/_index.en_files/figure-html/unnamed-chunk-10-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Note that the regression and smooth lines have changed their shapes 😳… all those warnings 😬 What’s going on?! 😲</p>
 <p>{{% notice warning %}}
-When using xlim() and ylim(), the points outside the specified range are deleted and are not considered while drawing the line using <code>geom_smooth()</code>. This feature might come in handy when you wish to know how the line of best fit would change when some extreme values or outliers are removed.
+When using <code>xlim()</code> and <code>ylim()</code>, the points outside the specified range are deleted and are not considered while drawing the line using <code>geom_smooth()</code>. This feature might come in handy when you wish to know how the line of best fit would change when some extreme values or outliers are removed.
 {{% /notice %}}</p>
-<p>Thankfully, there is another way to change the limits of the axis without deleting the points by simply zooming in to the region of interest. This is done using <code>coord_cartesian()</code>. You can try to replace <code>xlim()</code> and <code>ylim()</code> commands in the previous code chunk with the code below to see what would happen.</p>
+<p>Thankfully, there is another way to change the limits of the axis without deleting the points by simply zooming in on the region of interest. This is done using <code>coord_cartesian()</code>. You can try to replace <code>xlim()</code> and <code>ylim()</code> commands in the previous code chunk with the code below to see what will happen.</p>
 <pre><code>coord_cartesian(xlim = c(0, 90000), ylim = c(25, 100))  # zooming in specified limits of the x &amp; y axis</code></pre>
 <p>You can set the breaks on the x axis and label them by using <code>scale_x_continuous()</code>. Similarly, can you can do it for the y axis?</p>
 <p>Try to play with changing the colour palette. For more options check <a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html">Sequential, diverging and qualitative colour scales from colorbrewer.org</a>.</p>
-<p>These are build-in themes which control all non-data display. You should use <code>theme_bw()</code> to have white background or <code>theme_dark()</code> for dark grey. For more build-in themes click <a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">here</a>.</p>
+<p>These are build-in themes which control all non-data display. You should use <code>theme_bw()</code> to have a white background or <code>theme_dark()</code> for dark grey. For more build-in themes click <a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">here</a>.</p>
 <pre class="r"><code>ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
   geom_point(aes(col = continent), alpha = 0.5, shape = 20, size = 3) + 
   geom_smooth(method = &quot;lm&quot;, se = F, col = &quot;maroon3&quot;) + 
@@ -274,7 +274,7 @@ When using xlim() and ylim(), the points outside the specified range are deleted
   # white background theme
   theme_bw()</code></pre>
 <p><img src="/Intro2R/Visualisation/_index.en_files/figure-html/unnamed-chunk-11-1.png" width="768" style="display: block; margin: auto;" /></p>
-<p>There is a <code>ggthemes</code> library of themes that willhelp you create stylish ggplot charts used by different journals like the Wall Street Journal or the Economist. See what other themes you can use by going to <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/">this website</a></p>
+<p>There is a <code>ggthemes</code> library of themes that will help you create stylish ggplot charts used by different journals like the Wall Street Journal or the Economist. See what other themes you can use by going to <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/">this website</a></p>
 <pre class="r"><code>## If you don&#39;t have ggthemes installed yet, uncomment and run the line below
 #install.packages(&quot;ggthemes&quot;)
 library(ggthemes)
@@ -326,10 +326,10 @@ Try to explore the two functions for yourself and see where it will take you.
 <hr />
 <p>💪 There is a challenge:</p>
 <ul>
-<li><p><code>dplyr</code>’s <code>group_by()</code> function enables you to group your data. It allows you to create a separate df that splits the original df by a variable.</p></li>
-<li><p><code>boxplot()</code> function produces boxplot(s) of the given (grouped) values.</p></li>
+<li><p><code>dplyr</code>’s <code>group_by()</code> function enables you to group your data. It allows you to create a separate df that splits the original df by a variable</p></li>
+<li><p><code>boxplot()</code> function produces boxplot(s) of the given (grouped) values</p></li>
 </ul>
-<p>Knowing about <code>group_by()</code> and <code>boxplot()</code> function and using <code>gapminder</code> data, can you compute the median life expectancy for year 2007 by continent and visualise your result?</p>
+<p>Knowing about the <code>group_by()</code> and the <code>boxplot()</code> functions and using <code>gapminder</code> data, can you compute the median life expectancy for the year 2007 by continent and visualise your result?</p>
 <p>😃🙌 Solution: code</p>
 <p>Let us look at the median life expectancy for each continent</p>
 <pre class="r"><code>gapminder %&gt;%
@@ -344,7 +344,6 @@ Try to explore the two functions for yourself and see where it will take you.
 ## 3 Asia         61.8
 ## 4 Europe       72.2
 ## 5 Oceania      73.7</code></pre>
-<p><strong>We are lucky that we live in Serbia, ie. Europe!!!</strong> 😅</p>
 <p>😃🙌 Solution: graph</p>
 <pre class="r"><code># visualise the information
 library(&quot;ggplot2&quot;)
@@ -400,12 +399,12 @@ glimpse(new_no2)</code></pre>
 <p><strong>YOUR TURN 👇</strong></p>
 <p>Practise by doing the following set of exercises:</p>
 <ol style="list-style-type: decimal">
-<li><p>Choose a data set from <a href="https://data.gov.uk" class="uri">https://data.gov.uk</a> that is interesting to you. Import the dataset into R and examine what kinds of variables are there. What plots would you recommend using to help people get to know the dataset?</p></li>
+<li><p>Choose a data set from <a href="https://data.gov.uk" class="uri">https://data.gov.uk</a> that is interesting to you. Import the dataset into R and examine what kinds of variables there are. What plots would you recommend using to help people get to know the dataset?</p></li>
 <li><p>Go back to NO2 2017 case study:</p></li>
 </ol>
 <ol style="list-style-type: lower-roman">
 <li><p>What are the questions you can ask based on the available information within the dataset?</p></li>
-<li><p>What plots would you recommend using to help in answering those questions?</p></li>
+<li><p>What plots would you recommend using to help to answer those questions?</p></li>
 <li><p>Create appropriate visualisations for i) &amp; ii)</p></li>
 </ol>
 <hr />

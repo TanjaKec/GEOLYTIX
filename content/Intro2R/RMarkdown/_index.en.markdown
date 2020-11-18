@@ -34,7 +34,7 @@ weight: 13
 
 - [A computational document](http://radar.oreilly.com/2011/07/wolframs-computational-documen.html)
 
-- Wizardry.
+- Wizardry
 
 [Alison Hill](https://alison.rbind.io) from [R Markdown Anatomy](https://rmd4medicine.netlify.com/slides/01-rmd-anatomy.html#1)
 
@@ -80,7 +80,7 @@ Inside the data folder you will find the following `csv` files:
 Split into groups of three and discuss how you would produce a Word document or a PowerPoint presentation to present your findings for the following problem:
 {{% /notice %}}
 
-Open the `exyu_olympic.csv` file in the Excel and try to:
+Open the `exyu_olympic.csv` file in Excel and try to:
 
 -	Find the number of medals per team? 
 -	Find the number of medals per team for the last Rio games?
@@ -214,7 +214,7 @@ ggplot(gapminder, aes(x = continent, y = lifeExp)) +
 
 #### Adding **LaTex** equations
 
-Finally, if you wish to add mathematical equations to your Markdown document you can easily embed [LaTeX]( LaTeX ) math equations into your report.
+Finally, if you wish to add mathematical equations to your Markdown document you can easily embed [LaTeX]( LaTeX ) maths equations into your report.
 
 To *display an equation* **in its own line** it needs to be surrounded by the double dollar symbol:
 
@@ -254,7 +254,7 @@ There is a list of files you should open and knit to see what features are incor
 Install the [`rticles`](https://github.com/rstudio/rticles) package to get all of the available `rmd` templates for various paper articles.
 
 {{% notice info %}}
-This secion is based on the material developed by [Dr Alison Hill](https://alison.rbind.io)'s for [R Markdown for Medicine](https://rmd4medicine.netlify.app) workshop.
+This section is based on the material developed by [Dr Alison Hill](https://alison.rbind.io) for [R Markdown for Medicine](https://rmd4medicine.netlify.app) workshop.
 {{% /notice %}}
 
 R is a powerful tool for reproducible research. There are many other packages that you could also use for sharing your work. Creating Shiny application using the [R::Shiny](https://shiny.rstudio.com)  package is a nice way of engaging with the audience while sharing your work. Here is an example of reproducible research of the problem used in the [Resampling in the Undergraduate Statistics Curriculum](https://tatjanakec.shinyapps.io/permutation_bootstrap/_w_dc1f9850/Bootstrap_WhatTeacherShouldKnow.pdf) paper:
@@ -289,9 +289,9 @@ Reproducible research should not be a burden for anybody who takes their researc
 
 - A common location to share your work
 
-##### Puting your R project on GitHub from RStudio
+##### Putting your R project on GitHub from RStudio
 
-We'll go through the basic steps of connecting RStudio with your GitHub account, but for more detailed instructions you shoul check [Happy Git dwith R](http://happygitwithr.com).
+We will go through the basic steps of connecting RStudio with your GitHub account, but for more detailed instructions you should check [Happy Git with R](http://happygitwithr.com).
 
 <img 
 src="http://happygitwithr.com/img/watch-me-diff-watch-me-rebase-smaller.png" align="middle" img width="60%"  
