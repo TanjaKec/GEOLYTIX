@@ -27,7 +27,9 @@ weight: 1
 
 ##### You should have access to a laptop.
 
-#####👉 Go to the following GitHub repo to download the material: https://github.com/TanjaKec/ASDA
+
+##### Go to the following GitHub repo to download the material: https://github.com/TanjaKec/ASDA
+
 
 -----------------------------
 © 2020 Tatjana Kecojevic
